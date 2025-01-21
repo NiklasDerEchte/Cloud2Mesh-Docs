@@ -1,17 +1,24 @@
-.. Cloud2Mesh-Docs documentation master file, created by
-   sphinx-quickstart on Tue Jan 21 13:33:09 2025.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Cloud2Mesh Documentation
+========================
 
-Cloud2Mesh-Docs documentation
-=============================
+Welcome to the documentation for **Cloud2Mesh**, a solution designed for capturing point clouds from a Zivid camera, converting objects into meshes in real-time, and streaming the resulting meshes to an AR HoloLens for visualization.
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
+**Cloud2Mesh** is composed of two software projects:
 
+* `ROSPointCloudMeshify <https://github.com/NiklasDerEchte/ROSPointCloudMeshify>`_: Converts PointCloud2 into meshes using state-of-the-art surface reconstruction algorithms.
+* `ROSUnityRenderer <https://github.com/NiklasDerEchte/ROSUnityRenderer>`_: Visualizes and streams the generated meshes to Microsoft HoloLens.
+
+This documentation covers the architecture, installation, usage, and technical details of both components.
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+
+   self
+   ros_point_cloud_meshify
+   ros_unity_renderer
+   installation
+   usage
+   mesh_algorithms
+   architecture
+   contributing
+   references
 
