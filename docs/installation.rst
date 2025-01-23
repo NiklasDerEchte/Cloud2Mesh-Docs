@@ -10,11 +10,11 @@ To get started, ensure you have the following:
    - **Microsoft HoloLens** (HoloLens 2 recommended).
    - **Zivid Camera** with `drivers <https://support.zivid.com/en/latest/getting-started/software-installation.html>`__ installed.
 
-- A source with PointCloud2 data via ROS2. 
-   - For example, from a 3D camera or a ROS2 bag file. 
-   - I use `Zivid-ROS <https://github.com/zivid/zivid-ros>`__ with `drivers <https://support.zivid.com/en/latest/getting-started/software-installation.html>`__.
+- A PointCloud2 source for ROS2. In my example: `zivid-ros <https://github.com/zivid/zivid-ros>`__ with `drivers <https://support.zivid.com/en/latest/getting-started/software-installation.html>`__.
+   - Make sure that the Zivid camera is on the same network as the ROS2 driver. You can test this with Zivid Studio. (Default IP: 172.28.60.XXX/24)
 - `ROS2 <https://github.com/ros2/ros2>`__ version: `Humble <https://docs.ros.org/en/humble/Installation.html>`__.
-- **Unity 2021 or higher**.
+- `Unity 2021 or higher <https://unity.com/de/download>`__.
+
 - For debug
    - rqt (ROS2 GUI tool).
    - rviz (ROS2 visualization tool).
@@ -24,7 +24,7 @@ To get started, ensure you have the following:
 
 - A **C++ compiler** (GCC, Clang, or MSVC).
 - `ROS2 Humble installation <https://docs.ros.org/en/humble/Installation.html>`__ installation with support for `sensor_msgs`.
-- `PointCloud Library <https://pointclouds.org/downloads/>`__ (**PCL**) installed.
+- `PointCloud Library <https://pointclouds.org/downloads/>`__ installed.
 
 You also need the following ROS packages:
 

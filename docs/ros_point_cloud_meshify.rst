@@ -6,9 +6,12 @@ The `ROSPointCloudMeshify <https://github.com/NiklasDerEchte/ROSPointCloudMeshif
 - **Receives PointCloud2 data** via `ROS2 <https://github.com/ros2/ros2>`__ topic <points/xyzrgba>, for example, from a `Zivid <https://github.com/zivid/zivid-ros>`__ camera.
 - **Processes point clouds** and converts them into meshes using advanced algorithms.
 - **Supports multiple meshing techniques**, including:
-  - Poisson Surface Reconstruction
-  - Greedy Triangulation
-  - Fast Organized Triangle Reconstruction
+
+  - Poisson Surface Reconstruction `(mode=poisson)`
+  - Greedy Triangulation `(mode=greedy)`
+  - Fast Organized Triangle Reconstruction `(mode=fast)`
+
+- **Publish the generated mesh** to the `/object_markers` topic as **MarkerArray**.
 
 Features
 --------

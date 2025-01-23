@@ -4,8 +4,7 @@ Getting Started
 ROSPointCloudMeshify
 --------------------
 
-1. Ensure the Zivid camera is streaming PointCloud2 data to `ROS2 <https://github.com/ros2/ros2>`__.
-2. Launch the ROSPointCloudMeshify `ROS2 <https://github.com/ros2/ros2>`__ node:
+Launch the `ROSPointCloudMeshify <https://github.com/NiklasDerEchte/ROSPointCloudMeshify>`_ `ROS2 <https://github.com/ros2/ros2>`__ node:
 
    .. code-block:: bash
 
@@ -13,21 +12,29 @@ ROSPointCloudMeshify
    
    -  The `mode` parameter can be set to `fast`, `greedy`, or `poisson` to select the surface reconstruction algorithm.
 
-3. The generated mesh will be published to the `/object_markers` topic as MarkerArray.
+- The generated mesh will be published to the `/object_markers` topic as MarkerArray.
+- The PointCloud2 data is received from the `/points/xyzrgba` topic.
 
 ROSUnityRenderer
 ----------------
 
-1. Start the `ROS-TCP-Endpoint <https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/ros_unity_integration/setup.md#-ros2-environment>`__
+Start the `ROS-TCP-Endpoint <https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/ros_unity_integration/setup.md#-ros2-environment>`__
 
 .. code-block:: bash
 
    ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=0.0.0.0
 
-2. Launch the ROSUnityRenderer application on Unity and connect to the endpoint.
+Launch the ROSUnityRenderer application on Unity and connect to the endpoint.
 
 
 ..
    1. Launch the ROSUnityRenderer application on your HoloLens.
    2. Connect to the `ROS2 <https://github.com/ros2/ros2>`__ topic where the meshes are published.
    3. Observe the real-time visualization of meshes in the AR environment.
+
+
+Streaming PointCloud2 Data
+--------------------------
+
+Ensure you have a source with PointCloud2 data via ROS2, for example from a 3D camera or a ROS2 bag file.
+In my example, I use the Zivid camera with `zivid-ros <https://github.com/zivid/zivid-ros>`__.

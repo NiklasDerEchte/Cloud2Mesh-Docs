@@ -12,6 +12,5 @@ Features
 
 - Support for real-time updates of meshes.
 - Optimized for Unity’s **AR Foundation Framework**.
-- Lightweight and highly efficient rendering pipeline.
 
 Repository: `GitHub - ROSUnityRenderer <https://github.com/NiklasDerEchte/ROSUnityRenderer>`_
