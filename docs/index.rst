@@ -1,3 +1,6 @@
+.. meta::
+   :google-site-verification: I2IxJ6FXf5yD7T1OcSDMVSXwIqEZ0Aj2rHD70owkVGU
+
 Cloud2Mesh Documentation
 ========================
 
