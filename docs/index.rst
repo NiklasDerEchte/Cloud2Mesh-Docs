@@ -19,6 +19,7 @@ This documentation covers the architecture, installation, usage, and technical d
    usage
    mesh_algorithms
    architecture
+   gpu
    contributing
    references
 

@@ -1,17 +1,20 @@
 Architecture
 ============
 
-System Overview
----------------
+coming soon...
 
-The Cloud2Mesh architecture includes the following components:
+..
+   System Overview
+   ---------------
 
-- **Zivid Camera**: Captures point clouds and publishes PointCloud2 data via `ROS2 <https://github.com/ros2/ros2>`__.
-- **ROSPointCloudMeshify**: Processes the point cloud and generates meshes.
-- **ROSUnityRenderer**: Visualizes and streams the meshes in AR.
+   The Cloud2Mesh architecture includes the following components:
 
-**Data Flow Diagram**:
+   - **Zivid Camera**: Captures point clouds and publishes PointCloud2 data via `ROS2 <https://github.com/ros2/ros2>`__.
+   - **ROSPointCloudMeshify**: Processes the point cloud and generates meshes.
+   - **ROSUnityRenderer**: Visualizes and streams the meshes in AR.
 
-.. code-block::
+   **Data Flow Diagram**:
 
-   Zivid Camera --> PointCloud2 (ROS) --> ROSPointCloudMeshify --> Mesh Topic --> ROSUnityRenderer --> HoloLens
+   .. code-block::
+
+      Zivid Camera --> PointCloud2 (ROS) --> ROSPointCloudMeshify --> Mesh Topic --> ROSUnityRenderer --> HoloLens

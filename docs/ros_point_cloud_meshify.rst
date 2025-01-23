@@ -14,7 +14,7 @@ Features
 --------
 
 - Real-time meshing of point cloud data.
-- Integration with `ROS2 <https://github.com/ros2/ros2>`__ for seamless communication.
+- Integration with `ROS2(Humble) <https://docs.ros.org/en/humble/index.html>`__ for seamless communication.
 - Built with **C++** and relies on the `PointCloud Library <https://github.com/PointCloudLibrary/pcl>`__.
 
 Repository: `GitHub - ROSPointCloudMeshify <https://github.com/NiklasDerEchte/ROSPointCloudMeshify>`_

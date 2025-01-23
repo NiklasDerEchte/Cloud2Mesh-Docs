@@ -38,3 +38,4 @@ html_title = project
 html_short_title = project.split('-')[0]
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
+html_logo = "_images/logo.png"
