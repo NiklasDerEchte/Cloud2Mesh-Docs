@@ -47,10 +47,9 @@ You also need the following ROS packages:
    - AR Foundation.
 
 - `Unity <https://unity.com/de/download>`__ Editor 2021 or higher.
-- `Unity-Robotics-Hub <https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/ros_unity_integration/README.md>`_ needs an `endpoint to the ros environment <https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/ros_unity_integration/setup.md#-ros2-environment>`_
-
-..
-   Unity-Robotics-Hub
+- `Unity-Robotics-Hub <https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/ros_unity_integration/README.md>`_
+   - ``ROS-TCP-Connector``: The Unity package with the C# API.
+   - ``ROS-TCP-Endpoint``: ROS environment endpoint node for the TCP connection. `How to set up the endpoint <https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/ros_unity_integration/setup.md#-ros2-environment>`__
 
 
 Installation Steps
@@ -64,7 +63,7 @@ Installation Steps
 
       git clone https://github.com/NiklasDerEchte/ROSPointCloudMeshify
 
-2. Build the project:
+2. Build the project in `object_detection/`:
 
    .. code-block:: bash
 
@@ -82,7 +81,15 @@ Installation Steps
 2. Open the project in Unity Editor.
 
 3. Import required Unity packages:
-   - `ROS-TCP-Connector <https://github.com/Unity-Technologies/ROS-TCP-Connector>`__
+
+   - `GitHub ROS-TCP-Connector <https://github.com/Unity-Technologies/ROS-TCP-Connector>`__ [1]_
+
+
+.. [1] Currently, there is a bug in version ``0.7.0`` of ``ROS-TCP-Connector``. 
+   Therefore, it is better to use my fork for the connector: `ROS-TCP-Connector (fork) <https://github.com/NiklasDerEchte/ROS-TCP-Connector/tree/bugfix/deserializer>`__	
+   For more informations, see `here <https://github.com/Unity-Technologies/ROS-TCP-Connector/pull/322>`__
+
+
 
 ..
    - Mixed Reality Toolkit (**MRTK**)

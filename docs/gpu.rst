@@ -3,5 +3,5 @@ GPU
 
 - Cuda (Not Supported)
 - OpenCL (Not Supported)
-- Vulkan (Not Supported)
+- SYCL (Not supported)
 - DirectX (Not Supported)
