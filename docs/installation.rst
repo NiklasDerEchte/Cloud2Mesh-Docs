@@ -40,7 +40,7 @@ You also need the following ROS packages:
 
    sudo apt install libpcap-dev
 
-**ROSUnityRenderer Requirements**:
+**ROSUnityBIRPMeshViz Requirements**:
 
 ..
    - Mixed Reality Toolkit (**MRTK**) for HoloLens.
@@ -70,13 +70,13 @@ Installation Steps
       colcon build
       source install/setup.bash
 
-**2. ROSUnityRenderer**:
+**2. ROSUnityBIRPMeshViz**:
 
 1. Clone the repository:
 
    .. code-block:: bash
 
-      git clone https://github.com/NiklasDerEchte/ROSUnityRenderer
+      git clone https://github.com/NiklasDerEchte/ROSUnityBIRPMeshViz
 
 2. Open the project in Unity Editor.
 

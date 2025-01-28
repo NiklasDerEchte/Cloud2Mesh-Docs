@@ -8,8 +8,9 @@ Welcome to the documentation for **Cloud2Mesh**, a solution designed for capturi
 
 **Cloud2Mesh** is composed of two software projects:
 
-* `ROSPointCloudMeshify <https://github.com/NiklasDerEchte/ROSPointCloudMeshify>`_: Converts PointCloud2 into meshes using state-of-the-art surface reconstruction algorithms.
-* `ROSUnityRenderer <https://github.com/NiklasDerEchte/ROSUnityRenderer>`_: Visualizes and streams the generated meshes to Microsoft HoloLens.
+
+* `ROSPointCloudMeshify <ros_point_cloud_meshify.html>`_: Converts PointCloud2 into meshes using state-of-the-art surface reconstruction algorithms.
+* `ROSUnityMeshViz <ros_unity_mesh_viz.html>`_: Visualizes and streams the generated meshes to Microsoft HoloLens.
 
 This documentation covers the architecture, installation, usage, and technical details of both components.
 
@@ -17,7 +18,7 @@ This documentation covers the architecture, installation, usage, and technical d
 
    self
    ros_point_cloud_meshify
-   ros_unity_renderer
+   ros_unity_mesh_viz
    installation
    usage
    mesh_algorithms

@@ -15,7 +15,7 @@ Launch the `ROSPointCloudMeshify <https://github.com/NiklasDerEchte/ROSPointClou
 - The generated mesh will be published to the `/object_markers` topic as MarkerArray.
 - The PointCloud2 data is received from the `/points/xyzrgba` topic.
 
-ROSUnityRenderer
+ROSUnityMeshViz
 ----------------
 
 Start the `ROS-TCP-Endpoint <https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/ros_unity_integration/setup.md#-ros2-environment>`__
@@ -24,11 +24,11 @@ Start the `ROS-TCP-Endpoint <https://github.com/Unity-Technologies/Unity-Robotic
 
    ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=0.0.0.0
 
-Launch the ROSUnityRenderer application on Unity and connect to the endpoint.
+Launch the ROSUnityMeshViz application on Unity and connect to the endpoint.
 
 
 ..
-   1. Launch the ROSUnityRenderer application on your HoloLens.
+   1. Launch the ROSUnityBIRPMeshViz application on your HoloLens.
    2. Connect to the `ROS2 <https://github.com/ros2/ros2>`__ topic where the meshes are published.
    3. Observe the real-time visualization of meshes in the AR environment.
 
