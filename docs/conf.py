@@ -39,3 +39,9 @@ html_short_title = project.split('-')[0]
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 html_logo = "_images/logo.png"
+
+html_meta = {
+    'description': '',
+    'keywords': 'PointCloud, Mesh, ROS2, ROS, Humble, Documentation, Unity, Zivid, PCL, C++, GPU, Cloud2Mesh, Cloud2Mesh-Docs',
+    'author': author,
+}
